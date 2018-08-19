@@ -5,7 +5,7 @@ const { get } = require('https');
 const { escape } = require('querystring');
 
 const Requester = class Requester {
-  constructor(rootdir, auth) {
+  constructor(rootdir) {
     const { NetConstants: {
       base_path,
       default_options,
@@ -21,7 +21,6 @@ const Requester = class Requester {
   buffer(query, page = 1, headers = {}) {
     const options = Object.assign({}, this.options);
     options.path = query === this.random_symb ? this.random_path : `${this.base_path}${escape(query)}&page=${page}`;
-    console.log(options.path)
     options.headers = Object.assign({}, options.headers, headers);
     return new Promise((res, rej) => {
       const req = this.lastrequest = get(options, response => {
