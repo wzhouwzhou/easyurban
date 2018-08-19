@@ -1,0 +1,30 @@
+{
+  "name": "easyurban",
+  "version": "1.0.0",
+  "description": "Urban dictionary definitions. Fast and simple.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wzhouwzhou/easyurban.git"
+  },
+  "keywords": [
+    "urban",
+    "dictionary",
+    "urbandictionary",
+    "promise",
+    "lightweight",
+    "easyurban"
+  ],
+  "author": "William Zhou",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/wzhouwzhou/easyurban/issues"
+  },
+  "homepage": "https://github.com/wzhouwzhou/easyurban#readme",
+  "dependencies": {
+    "easypathutil": "^1.0.2"
+  }
+}
